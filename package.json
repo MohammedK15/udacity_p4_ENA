@@ -10,7 +10,7 @@
     "format": "prettier --write \"**/*.{js,jsx}\""
   },
   "keywords": [],
-  "author": "Mohammed Elzanaty",
+  "author": "Mohammed Almufarrij",
   "license": "ISC",
   "description": "",
   "dependencies": {
