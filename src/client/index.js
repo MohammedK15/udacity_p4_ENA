@@ -1,15 +1,15 @@
-import isURLValid from './utils/validateURL'
-import handleSubmit from './js/formHandler'
+import isURLValid from './utils/validateURL';
+import handleSubmit from './js/formHandler';
 
-import './styles/style.scss'
- 
+import './styles/style.scss';
+
+// to wait until the page fully loaded
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
-
-    const form = document.getElementById('form')
-    form.addEventListener('submit', (event) => {
-        event.preventDefault()
-        handleSubmit()
-    })
-});
+  const form = document.getElementById('form_article');
+  form.addEventListener('submit', (event) => {
+    // to prevent reloading the page
+    event.preventDefault();
+    handleSubmit();
+  })
+})
 export { isURLValid, handleSubmit }
