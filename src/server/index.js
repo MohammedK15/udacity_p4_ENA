@@ -20,8 +20,11 @@ const BASE_URL = 'https://api.meaningcloud.com/sentiment-2.1';
 const API_KEY = process.env.meaning_cloud_API_KEY;
 
 app.get('/', function (req, res) {
-  // res.sendFile('dist/index.html');
-  res.sendFile(path.resolve('src/client/views/index.html'));
+  // for the production build
+  res.sendFile('dist/index.html');
+
+  // for the development build
+  // res.sendFile(path.resolve('src/client/views/index.html'));
 })
 
 app.post('/add-url', async (req, res) => {

@@ -1,4 +1,4 @@
-import isURLValid from './utils/validateURL';
+import isURLValid from './js/validateURL';
 import handleSubmit from './js/formHandler';
 
 import './styles/style.scss';

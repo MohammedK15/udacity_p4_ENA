@@ -1,4 +1,4 @@
-import isURLValid from "../utils/validateURL";
+import isURLValid from "./validateURL";
 
 const postData = async (url = '', data = {}) => {
   const res = await fetch(url, {
@@ -33,11 +33,11 @@ const handleSubmit = async () => {
     console.log(data)
 
     //update the UI
-    document.getElementById('score_tag').textContent = 'Score Tag: ' + data.score_tag
-    document.getElementById('agreement').textContent = 'Agreement: ' + data.agreement
-    document.getElementById('subjectivity').textContent = 'Subjectivity: ' + data.subjectivity
-    document.getElementById('confidence').textContent = 'Confidence: ' + data.confidence
-    document.getElementById('irony').textContent = 'Irony: ' + data.irony
+    document.getElementById('score_tag').textContent = 'Score Tag: ' + data.score_tag;
+    document.getElementById('agreement').textContent = 'Agreement: ' + data.agreement;
+    document.getElementById('subjectivity').textContent = 'Subjectivity: ' + data.subjectivity;
+    document.getElementById('confidence').textContent = 'Confidence: ' + data.confidence;
+    document.getElementById('irony').textContent = 'Irony: ' + data.irony;
 
   } else {
     alert('please enter a valid URL');
